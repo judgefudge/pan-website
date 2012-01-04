@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="keywords" content="pan,newsreader,usenet,nntp,gnome,gtk,linux,windows" />
+	<meta name="description" content="Pan is a Usenet newsreader that's good at both text and binaries." />
+	<meta name="robots" content="all" />
+	<title>Pan - A GNOME Newsreader</title>
+	<style type="text/css" media="all">
+		@import "../main.css";
+	</style>
+</head>
+<body>
+<div id="body">
+	<div id="head"></div>
+	<div id="menu">
+    <a href="../">what's new</a>
+		<a href="../screenshots/">screenshots</a>
+    <a href="../download/">download</a>
+    <a href="../tipjar/">tip jar</a>
+    <a href="../requirements/">requirements</a>
+    <br />
+    <a href="../manual/">manual</a>
+    <a href="../features/">features</a>
+    <a href="../faq/">faq</a>
+    <a href="../roadmap/">roadmap</a>
+    <a href="../oldnews/">news archives</a>
+    <a href="../mailing_lists/">mailing lists</a>
+    <a href="../bugs/">bug reports</a>
+    <a href="../contact/">contact</a>
+	</div>
+	<div id="content">
+		<div class="section" style="text-align: center">
+		  <script type="text/javascript"><!--
+      google_ad_client = "pub-5848608092248775";
+      google_ad_width = 468;
+      google_ad_height = 60;
+      google_ad_format = "468x60_as";
+      google_ad_type = "text_image";
+      google_ad_channel ="";
+      google_color_border = "CCCCCC";
+      google_color_bg = "FFFFFF";
+      google_color_link = "000000";
+      google_color_url = "666666";
+      google_color_text = "333333";
+      //--></script>
+     <script type="text/javascript"
+     src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+     </script>
+     <div style="font-size: x-small">(Proceeds from the above ads go to rebelbase.com for hosting Pan.<br />
+     Proceeds from the <a href="tipjar/">tip jar</a> go to Pan's programmers.)</div>
+     </div>
+<div class="section">
+<h1><a name="where">Where to Report Bugs</a></h1>
+		<p>The first thing to do is to look at
+		<a href="http://bugzilla.gnome.org/query.cgi?product=Pan">the Pan bug database</a>
+		to see if the bug you're experiencing has already been reported:</p>
+		<ul>
+		<li>If you can't find the bug listed, go read
+		abisource's <a href="http://bugzilla.abisource.com/page.cgi?id=bug-writing.html">bug reporting guidelines</a>
+		and "<a href="#what">what to report</a>",
+		then fill out a
+		<a href="http://bugzilla.gnome.org/enter_bug.cgi?product=Pan">new bug report</a>.<br /></li>
+		<li>If the bug is in the
+		<a href="http://bugzilla.gnome.org/buglist.cgi?product=Pan&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=&amp;emailtype1=substring&amp;emailassigned_to1=1&amp;email2=&amp;emailtype2=substring&amp;emailreporter2=1&amp;changedin=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;short_desc=&amp;short_desc_type=substring&amp;long_desc=&amp;long_desc_type=substring&amp;bug_file_loc=&amp;bug_file_loc_type=substring&amp;status_whiteboard=&amp;status_whiteboard_type=substring&amp;keywords=&amp;keywords_type=anywords&amp;op_sys_details=&amp;op_sys_details_type=substring&amp;version_details=&amp;version_details_type=substring&amp;cmdtype=doit&amp;namedcmd=newsrc_import&amp;newqueryname=&amp;order=Importance&amp;form_name=query">open bugs</a> list, you can add a comment at the end of the bug.
+		(Keep reading to learn what information helps us the most.)<br /></li>
+		<li>If the bug is in the
+		<a href="http://bugzilla.gnome.org/buglist.cgi?product=Pan&amp;bug_status=NEEDINFO&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;email1=&amp;emailtype1=substring&amp;emailassigned_to1=1&amp;email2=&amp;emailtype2=substring&amp;emailreporter2=1&amp;changedin=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;short_desc=&amp;short_desc_type=substring&amp;long_desc=&amp;long_desc_type=substring&amp;bug_file_loc=&amp;bug_file_loc_type=substring&amp;status_whiteboard=&amp;status_whiteboard_type=substring&amp;keywords=&amp;keywords_type=anywords&amp;op_sys_details=&amp;op_sys_details_type=substring&amp;version_details=&amp;version_details_type=substring&amp;cmdtype=doit&amp;namedcmd=newsrc_import&amp;newqueryname=&amp;order=Importance&amp;form_name=query">closed bugs</a> list, 99% of the time it's because the bug has been
+		fixed in a newer version of Pan.  1% of the time it's because the bug
+		reporter has disappeared and the bug's been marked "NEEDINFO"; feel free
+		to reopen this bug and add your own comment in the form.  (Again,
+		keep reading to learn what information helps us the most.)</li>
+		</ul>
+</div>
+<div class="section">
+<h1><a name="what">What to Report</a></h1>
+		<p>Please read Apache's <a href="http://httpd.apache.org/bug_report.html">bug
+		reporting guidelines</a> first,<br />then make sure your bug report contains:</p>
+		<ul>
+		<li>The version of Pan you're using (ex: 0.112)</li>
+		<li>A description of the problem.</li>
+		<li><strong>Always</strong> include a <a href="#backtrace">backtrace</a> and/or <a href="#runlog">runlog</a> for crashes, freeze-ups, and runaway programs.</li>
+		<li>If the problem is reproducible, <strong>always</strong> include a recipe for us to follow.</li>
+		<li>Anything else you think could be important.  Too much information is better than not enough.</li>
+		</ul>
+</div>
+<div class="section">
+<h1><a name="runlog">Runlogs</a></h1>
+		<p>
+		Runlogs should almost always be included with a bug report.
+		If Pan is crashing, providing this and a backtrace together is
+		extremely helpful.  If Pan isn't working with your news server,
+		a runlog will show the dialogue that Pan and your server are having.
+		Best of all a runlog requires no special tools; all you need is to
+		start Pan with the command-line argument <code>--debug</code>
+		in Pan 0.9.4 or higher.
+		</p>
+</div>
+<div class="section">
+<h1><a name="backtrace">Backtraces</a></h1>
+		<p>
+		In cases of crashes, freeze-ups, or runaway programs, a backtrace is often a roadmap to the bug.
+		</p><p>
+		Because of differences in operating systems, news servers, and other variables,
+		it's at best tedious or at worst impossible to reproduce some of the problems reported to us.
+		With tools that come installed on most Unix/Linux systems, though, you can
+		make a roadmap for us in just a couple of minutes.
+		</p><p>
+		If Pan crashed and the bug-buddy Bug Report form popped up, Bug buddy will add
+		a backtrace to the bug report automatically.  If this didn't happen or you don't
+		have Bug Buddy, you can get a backtrace by hand fairly easily.
+		Here is a walk-through of the entire process, including
+		<span style="color: red">the commands you type</span> and
+		<span style="color: blue">a running explanation</span>.</p>
+		<table border="1" cellpadding="6"><tr><td>
+<pre style="font-size: x-small">
+% <span style="color: red">script pan_backtrace</span>
+Script started, file is pan_backtrace
+<span style="color: blue">(Saves session as "pan_backtrace" for mailing)</span>
+% <span style="color: red">uname -a</span> <span style="color: blue">(system information)</span>
+Linux 1.4.3, VIC 20
+% <span style="color: red">export LD_ASSUME_KERNEL=2.4.1</span> <span style="color: blue">(this is only needed on Red Hat 9)</span>
+% <span style="color: red">gdb pan</span> <span style="color: blue">(Start gdb.  See <a href="#getting_gdb">getting_gdb</a>.)</span>
+Copyright 1998 Free Software Foundation, Inc.
+(gdb) <span style="color: red">handle SIGUSR1 nostop noprint</span> <span style="color: blue">(Threads)</span>
+(gdb) <span style="color: red">handle SIG32 nostop noprint</span>
+<span style="color: blue">(If you get a `SIG32 not recognized' error,
+just ignore it and keep going.)</span>
+(gdb) <span style="color: red">run</span> <span style="color: blue">(Start pan)</span>
+<span style="color: blue">(At this point, use Pan until it freezes
+up or crashes.  If Pan freezes, you'll have
+to type CTRL-C to get the gdb prompt.)</span>
+Program received signal SIGINT, Interrupt.
+(gdb) <span style="color: red">thread apply all bt</span> <span style="color: blue">(Show backtraces for every thread)</span>
+Thread 7 (LWP      7        ):
+#0  0x404b76a0 in poll ()
+#1  0x4040d2db in __pthread_manager ()
+
+Thread 6 (LWP      6        ):
+#0  0x4044167a in sigsuspend ()
+#1  0x40410703 in __pthread_lock ()
+#2  0x4040e06a in pthread_mutex_lock ()
+
+Thread 5 (LWP      5        ):
+#0  0x404b8cfe in select ()
+
+Thread 4 (LWP      4        ):
+#0  0x404b8cfe in select ()
+#1  0x40351b98 in _XlcPublicMethods ()
+
+Thread 3 (LWP      3        ):
+#0  0x4044167a in sigsuspend ()
+
+Thread 2 (LWP      2        ):
+#0  0x4044167a in sigsuspend ()
+#1  0x4040c81c in pthread_cond_wait ()
+
+Thread 1 (LWP      1        ):
+#0  0x404b8cfe in socket_connect ()
+#1  0x40351b98 in nntp_handshake ()
+#2  0x40351b44 in download_new_headers ()
+(gdb) <span style="color: red">quit</span> <span style="color: blue">(Quits gdb)</span>
+% <span style="color: red">(type CTRL-D)</span>
+Script done, file is pan_backtrace
+% <span style="color: blue">(attach the file to your email)</span></pre>
+</td></tr>
+</table>
+</div>
+</div>
+	<div id="foot">
+		Original site design by <a href="http://www.oswd.org/">Davide Rognoni</a>.
+	</div>
+</div>
+</body>
+</html>
